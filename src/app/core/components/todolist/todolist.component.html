@@ -1,0 +1,17 @@
+<mat-card [class.finished]="isTodoFinish" class="todocard">
+  <mat-slide-toggle [checked]="isTodoFinish" (change)="todostatusChange()"></mat-slide-toggle>
+  Simple card
+  <p class="todocard__text">{{ cartNumber}}</p>
+  <p class="todocard__text">{{cartTitle}}</p>
+  <div class="todocard-date">
+    <p class="todocard__text">START</p>
+  </div>
+  <h5 class="todocard__text">{{dateCreation | date : "dd.mm.yyyy" }}</h5>
+  <div class="todocard-date">
+    <p class="todocard__text">END </p>
+  </div>
+    <h5 class="todocard__text"> {{dateCreation | date : "MMM d, y, h:mm:ss a" }}</h5>
+
+   <img (click)="edittodo()" class="todocard__img" src="assets/icons/pen.png" alt="pen">
+   <img (click)="delittodo()" class="todocard__img2" src="assets/icons/pen2.png" alt="delitte">
+</mat-card>

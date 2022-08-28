@@ -1,0 +1,19 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { TextInputComponent } from './text-input.component';
+
+
+
+@NgModule({
+  declarations: [
+
+
+  ],
+
+
+  imports: [
+    CommonModule
+
+  ]
+})
+export class TextInputModule { }

@@ -1,0 +1,31 @@
+
+<div class="container">
+  <app-header></app-header>
+
+  <div class="section">
+
+    <app-todolist *ngFor="let todo of todoList; index as idx"
+    [isTodoFinish]="todo.isTodoFinish"
+    [cartTitle]="todo.cartTitle"
+    [dateCreation]="todo.dateCreation"
+    [dateCreations]="todo.dateCreations"
+    [cartNumber]="idx +1">
+  </app-todolist>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+</div>
+
+

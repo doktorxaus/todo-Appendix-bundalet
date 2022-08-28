@@ -1,0 +1,30 @@
+<header class="header">
+  <h1 class="header__title"> Todo List</h1>
+
+  <div class="btn-group">
+    <app-button [btnTEXT]="'All'" [buttoColor]="'Basic'"></app-button>
+    <app-button [btnTEXT]="'Active'" ></app-button>
+    <app-button [btnTEXT]="'Finish'"></app-button>
+
+
+  </div>
+  <app-seleckt></app-seleckt>
+
+
+
+
+
+
+
+
+
+  <div class="header-creation">
+    <h4 class="header-creation__text">Creation tasck:</h4>
+    <div class="header-creation-controll">
+      <app-text-input></app-text-input>
+      <app-button [btnTEXT]="'Create'"></app-button>
+
+    </div>
+  </div>
+
+</header>
